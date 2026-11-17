@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NR Solar Sales & Contractors — Hot Water from the Sun</title>
+<meta name="description" content="NR Solar — Professional solar water heating solutions in Eswatini. Save energy, save money. CREST & HI-TECH solar water heaters from E6,000.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#fff;color:#1e293b}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.header-inner{max-width:1100px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-img{width:48px;height:48px;border-radius:8px;object-fit:cover}
+.logo-text h1{font-size:18px;font-weight:800;color:#1e3a8a;line-height:1}
+.logo-text p{font-size:11px;color:#f97316;font-weight:600}
+.nav{display:none;gap:24px}
+.nav a{font-size:14px;font-weight:500;color:#334155}
+.nav a:hover{color:#2563eb}
+.btn-call{display:flex;align-items:center;gap:8px;background:#f97316;color:#fff;padding:8px 16px;border-radius:50px;font-size:14px;font-weight:700;cursor:pointer;border:none}
+.btn-call:hover{background:#ea580c}
+@media(min-width:768px){.nav{display:flex}}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#1e3a8a,#1e40af,#1e3a8a);padding:80px 16px;text-align:center}
+.hero::before{content:'';position:absolute;top:-80px;right:-80px;width:400px;height:400px;border-radius:50%;background:#f97316;opacity:.1;filter:blur(60px)}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(249,115,22,.2);padding:8px 16px;border-radius:50px;margin-bottom:24px}
+.hero-badge span{font-size:14px;color:#fdba74;font-weight:500}
+.hero h1{font-size:40px;font-weight:800;color:#fff;margin-bottom:16px}
+@media(min-width:768px){.hero h1{font-size:60px}}
+.hero h1 span{color:#fb923c}
+.hero p{font-size:18px;color:#dbeafe;margin-bottom:32px;max-width:600px;margin-left:auto;margin-right:auto}
+@media(min-width:768px){.hero p{font-size:20px}}
+.hero-btns{display:flex;flex-direction:column;gap:12px;justify-content:center;align-items:center}
+@media(min-width:640px){.hero-btns{flex-direction:row}}
+.btn-primary{display:flex;align-items:center;gap:8px;background:#f97316;color:#fff;padding:16px 32px;border-radius:50px;font-size:16px;font-weight:700;cursor:pointer;border:none}
+.btn-primary:hover{background:#ea580c;transform:scale(1.05);transition:all .2s}
+.btn-whatsapp{display:flex;align-items:center;gap:8px;background:#22c55e;color:#fff;padding:16px 32px;border-radius:50px;font-size:16px;font-weight:700;cursor:pointer;border:none}
+.btn-whatsapp:hover{background:#16a34a;transform:scale(1.05);transition:all .2s}
+.hero-stats{display:flex;justify-content:center;gap:32px;margin-top:48px}
+.stat{text-align:center}
+.stat-num{font-size:28px;font-weight:800;color:#fb923c}
+.stat-label{font-size:12px;color:#dbeafe;margin-top:4px}
+.products{padding:80px 16px;background:#f8fafc}
+.products-inner{max-width:1100px;margin:0 auto}
+.section-title{text-align:center;margin-bottom:48px}
+.section-title h2{font-size:32px;font-weight:800;color:#1e3a8a;margin-bottom:8px}
+@media(min-width:768px){.section-title h2{font-size:36px}}
+.section-title p{color:#64748b}
+.products-grid{display:grid;gap:32px}
+@media(min-width:768px){.products-grid{grid-template-columns:1fr 1fr}}
+.product-card{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.1)}
+.product-card:hover{box-shadow:0 20px 50px rgba(0,0,0,.15)}
+.product-img-wrap{position:relative;height:256px;background:#eff6ff}
+.product-img-wrap img{width:100%;height:100%;object-fit:cover}
+.price-badge{position:absolute;top:16px;right:16px;background:#f97316;color:#fff;padding:8px 16px;border-radius:50px;font-size:18px;font-weight:800;box-shadow:0 4px 12px rgba(0,0,0,.2)}
+.product-body{padding:24px}
+.product-body h3{font-size:24px;font-weight:800;color:#1e3a8a;margin-bottom:8px}
+.product-body p{color:#64748b;margin-bottom:16px}
+.feature-list{list-style:none;margin-bottom:24px}
+.feature-list li{display:flex;align-items:center;gap:8px;font-size:14px;color:#334155;margin-bottom:8px}
+.feature-list li::before{content:'✓';color:#f97316;font-weight:800;font-size:18px}
+.btn-order{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;background:#2563eb;color:#fff;padding:12px;border-radius:12px;font-weight:700;border:none;cursor:pointer;font-size:15px}
+.btn-order:hover{background:#1d4ed8}
+.features{padding:80px 16px;background:#fff}
+.features-inner{max-width:1100px;margin:0 auto}
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(min-width:768px){.features-grid{grid-template-columns:repeat(4,1fr)}}
+.feature-card{text-align:center;padding:24px;border-radius:16px;background:#f8fafc}
+.feature-card:hover{background:#eff6ff}
+.feature-icon{display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#dbeafe;margin-bottom:16px;font-size:28px}
+.feature-card h3{font-weight:800;color:#1e3a8a;margin-bottom:4px;font-size:15px}
+.feature-card p{font-size:12px;color:#64748b}
+.banner{background:linear-gradient(90deg,#f97316,#ea580c);padding:48px 16px;text-align:center}
+.banner h2{font-size:28px;font-weight:800;color:#fff;margin-bottom:8px}
+@media(min-width:768px){.banner h2{font-size:36px}}
+.banner p{color:#fed7aa;margin-bottom:24px}
+.banner-btns{display:flex;flex-direction:column;gap:12px;justify-content:center;align-items:center}
+@media(min-width:640px){.banner-btns{flex-direction:row}}
+.banner-btn{display:flex;align-items:center;gap:8px;background:#fff;color:#ea580c;padding:12px 32px;border-radius:50px;font-weight:700;border:none;cursor:pointer;font-size:15px}
+.banner-btn:hover{background:#fff5ed}
+.about{padding:80px 16px;background:#f8fafc;text-align:center}
+.about-inner{max-width:700px;margin:0 auto}
+.about-logo{width:96px;height:96px;border-radius:16px;margin:0 auto 24px;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.about h2{font-size:28px;font-weight:800;color:#1e3a8a;margin-bottom:16px}
+.about p{color:#64748b;margin-bottom:24px;line-height:1.6}
+.about-tags{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-bottom:24px}
+.about-tag{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:500;color:#334155}
+.about-supplier{font-size:14px;color:#94a3b8}
+.contact{padding:80px 16px;background:#1e3a8a;text-align:center}
+.contact-inner{max-width:600px;margin:0 auto}
+.contact h2{font-size:28px;font-weight:800;color:#fff;margin-bottom:8px}
+.contact p{color:#dbeafe;margin-bottom:32px}
+.contact-grid{display:grid;gap:16px;max-width:400px;margin:0 auto 16px}
+@media(min-width:640px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact-card{display:flex;align-items:center;justify-content:center;gap:12px;background:#fff;padding:16px 24px;border-radius:16px}
+.contact-card-label{font-size:12px;color:#94a3b8}
+.contact-card-num{font-weight:800;color:#1e3a8a}
+.btn-wa{display:inline-flex;align-items:center;gap:8px;background:#22c55e;color:#fff;padding:16px 32px;border-radius:50px;font-weight:700;border:none;cursor:pointer;font-size:16px}
+.btn-wa:hover{background:#16a34a}
+.footer{background:#172554;padding:32px 16px;text-align:center}
+.footer-logo{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:16px}
+.footer-logo img{width:40px;height:40px;border-radius:8px}
+.footer-logo-text h4{font-weight:800;color:#fff;font-size:15px}
+.footer-logo-text p{font-size:11px;color:#f97316}
+.footer p{font-size:14px;color:#93c5fd;margin-bottom:4px}
+.footer-copy{font-size:12px;color:#60a5fa;margin-top:8px}
+.footer-supplier{font-size:12px;color:#3b82f6;margin-top:4px}
+</style>
+</head>
+<body>
+<header class="header"><div class="header-inner"><div class="logo-wrap"><img src="logo.jpg" alt="NR Solar Logo" class="logo-img"><div class="logo-text"><h1>NR SOLAR</h1><p>Sales & Contractors</p></div></div><nav class="nav"><a href="#products">Products</a><a href="#features">Why Us</a><a href="#about">About</a><a href="#contact">Contact</a></nav><a href="tel:78420821" class="btn-call">📞 Call Now</a></div></header>
+<section class="hero"><div class="hero-badge">☀️ EST 2023 · Eswatini</div><h1>Hot Water <span>from the Sun</span></h1><p>Save energy, save money. Professional solar water heating solutions for your home and business in Eswatini.</p><div class="hero-btns"><a href="#products" class="btn-primary">View Products →</a><a href="https://wa.me/26878420821" target="_blank" class="btn-whatsapp">💬 WhatsApp Us</a></div><div class="hero-stats"><div class="stat"><div class="stat-num">100%</div><div class="stat-label">Solar Powered</div></div><div class="stat"><div class="stat-num">E6,000</div><div class="stat-label">Starting From</div></div><div class="stat"><div class="stat-num">2</div><div class="stat-label">Product Lines</div></div></div></section>
+<section class="products" id="products"><div class="products-inner"><div class="section-title"><h2>Our Products</h2><p>Premium solar water heaters — invest once, save for years</p></div><div class="products-grid"><div class="product-card"><div class="product-img-wrap"><img src="product.jpg" alt="CREST Solar Water Heater"><div class="price-badge">E7,500</div></div><div class="product-body"><h3>CREST Solar Water Heater</h3><p>Low pressure system designed for family use — durable and affordable.</p><ul class="feature-list"><li>Low pressure system</li><li>Built to last — durable construction</li><li>Works with municipal water supply</li><li>Perfect for family households</li><li>Significant electricity savings</li></ul><a href="tel:78420821" class="btn-order">📞 Order Now — E7,500</a></div></div><div class="product-card"><div class="product-img-wrap"><img src="product.jpg" alt="HI-TECH Solar Water Heater"><div class="price-badge">E6,000</div></div><div class="product-body"><h3>HI-TECH Solar Water Heater</h3><p>High performance system — efficient, reliable, all-day hot water.</p><ul class="feature-list"><li>High performance design</li><li>Highly efficient & reliable</li><li>Significant electricity savings</li><li>All-day hot water supply</li><li>Premium build quality</li></ul><a href="tel:79941231" class="btn-order">📞 Order Now — E6,000</a></div></div></div></div></section>
+<section class="features" id="features"><div class="features-inner"><div class="section-title"><h2>Why Choose NR Solar?</h2><p>Solar powered, quality driven</p></div><div class="features-grid"><div class="feature-card"><div class="feature-icon">⚡</div><h3>Low Pressure</h3><p>Works efficiently even in low-pressure areas</p></div><div class="feature-card"><div class="feature-icon">🛡️</div><h3>Reliable & Durable</h3><p>Built to last for years of service</p></div><div class="feature-card"><div class="feature-icon">📉</div><h3>Energy Saving</h3><p>Cut your electricity bill significantly</p></div><div class="feature-card"><div class="feature-icon">🔧</div><h3>Easy Maintenance</h3><p>Simple to maintain and service</p></div></div></div></section>
+<section class="banner"><h2>Invest Once, Save for Years</h2><p>Stop paying for hot water — let the sun do the work</p><div class="banner-btns"><a href="tel:78420821" class="banner-btn">📞 7842 0821</a><a href="tel:79941231" class="banner-btn">📞 7994 1231</a></div></section>
+<section class="about" id="about"><div class="about-inner"><img src="logo.jpg" alt="NR Solar Logo" class="about-logo"><h2>NR Solar Sales & Contractors</h2><p>Established in 2023, NR Solar is a leading solar water heating contractor in Eswatini. We supply and install premium solar water heaters that help families and businesses reduce their electricity costs while enjoying reliable hot water all day.</p><div class="about-tags"><span class="about-tag">🏆 EST 2023</span><span class="about-tag">🛡️ Quality Guaranteed</span><span class="about-tag">⏰ Professional Installation</span></div><p class="about-supplier">Supplied by INSIKA GROUP</p></div></section>
+<section class="contact" id="contact"><div class="contact-inner"><h2>Get Hot Water from the Sun</h2><p>Call us today or send a WhatsApp message to place your order</p><div class="contact-grid"><a href="tel:78420821" class="contact-card"><div><div class="contact-card-label">Call</div><div class="contact-card-num">7842 0821</div></div></a><a href="tel:79941231" class="contact-card"><div><div class="contact-card-label">Call</div><div class="contact-card-num">7994 1231</div></div></a></div><a href="https://wa.me/26878420821" target="_blank" class="btn-wa">💬 WhatsApp Us</a></div></section>
+<footer class="footer"><div class="footer-logo"><img src="logo.jpg" alt="NR Solar"><div class="footer-logo-text"><h4>NR SOLAR</h4><p>Sales & Contractors</p></div></div><p>Solar powered, quality driven</p><p class="footer-copy">© 2026 NR Solar Sales & Contractors · EST 2023 · Eswatini</p><p class="footer-supplier">Supplied by INSIKA GROUP</p></footer>
+</body>
+</html>
